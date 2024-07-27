@@ -18,7 +18,7 @@ void main(List<String> arguments) {
 Future<void> dcat(List<String> paths, {bool showLineNumbers = false}) async {
   if (paths.isEmpty) {
     print("Please provide a file path");
-    exitCode = 1;
+    exitCode = 2;
   } else {
     for (final path in paths) {
       var lineNumber = 1;
